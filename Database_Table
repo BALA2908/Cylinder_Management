@@ -1,0 +1,9 @@
+USE cylinder_management;
+
+CREATE TABLE IF NOT EXISTS Cylinder (
+    id VARCHAR(255) NOT NULL PRIMARY KEY,
+    cylinder_type ENUM('Full', 'Empty') NOT NULL,
+    status ENUM('Delivered', 'Not_Delivered') NOT NULL,
+    created_date DATETIME NOT NULL,
+    refill_date DATETIME NOT NULL
+);
